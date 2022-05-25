@@ -1,0 +1,15 @@
+<h1 class="text-gradient-primary" mat-dialog-title>
+  {{ 'Data.DeleteConfirmation' | translate}}
+</h1>
+
+<div mat-dialog-content>
+  <h3>{{ 'Data.DeleteMessage' | translate }}</h3>
+</div>
+
+
+<div mat-dialog-actions class="d-flex">
+  <button type="button" (click)="onDismiss()" class="btn btn-lg  btn-gradient-dark mx-2">{{ 'Data.No' |
+    translate }}</button>
+  <button type="button" (click)="onConfirm()" class="btn btn-lg  btn-gradient-red mx-2">{{ 'Data.Yes' | translate
+    }}</button>
+</div>

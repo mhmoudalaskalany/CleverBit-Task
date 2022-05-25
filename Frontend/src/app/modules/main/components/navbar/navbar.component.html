@@ -1,0 +1,69 @@
+<header>
+    <div class="header-inner d-flex align-items-center justify-content-between">
+        <div class="right-part">
+            <a (click)="toggleSidebar()">
+                <span>
+                    <i class='bx bx-menu font-26 text-gradient-primary'></i>
+                </span>
+            </a>
+        </div>
+
+        <div class="left-part w-100">
+            <ul class="d-flex align-items-center justify-content-end px-4 m-0">
+                <li class="profile-wrapper">
+                    <span>
+                        <div class="profile d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="assets/images/faces/face1.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <div class="d-flex">
+                                    <h3 class="m-0">{{ Localize.isEnglish() ? profileModel?.nameEn :
+                                        profileModel?.nameAr }}</h3>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </span>
+                </li>
+
+
+
+                <li>
+                    <span>
+                        <button mat-button [matMenuTriggerFor]="language">{{ 'Common.Language' | translate}}
+                            <i class='bx bxs-down-arrow-alt text-gradient-primary font-20'></i>
+                        </button>
+
+                        <mat-menu #language="matMenu">
+                            <div *ngIf="Localize.isEnglish()"
+                                class="d-flex justify-content-center alig-items-center p-2 drop-item"
+                                (click)="setLanguage('ar')">
+                                <span class="mt-2">العربية</span>
+                                <img mat-menu-item class="language-icon" src="assets/images/om-flag.png">
+                            </div>
+
+                            <div *ngIf="!Localize.isEnglish()"
+                                class="d-flex justify-content-center alig-items-center p-2 drop-item"
+                                (click)="setLanguage('en')">
+                                <span class="mt-2">English</span>
+                                <img mat-menu-item class="language-icon" src="assets/images/us-flag.png">
+                            </div>
+
+                        </mat-menu>
+
+                    </span>
+                </li>
+
+
+                <li>
+                    <span>
+                        <i class="bx bx-exit font-26" (click)="logout()"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

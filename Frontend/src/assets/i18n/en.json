@@ -1,0 +1,22 @@
+{
+  "TITLE": "Employee Management System",
+  "HOME": {},
+  "Data": {
+    "Employees": "Employees",
+    "Home": "Home",
+    "Employee": "Employee",
+    "Name": "Name",
+    "Language": "Language",
+    "FirstName": "First Name",
+    "SurName": "Sur Name",
+    "Region": "Region",
+    "Actions": "Actions"
+  },
+  "Common": {
+    "Name": "Name",
+    "Language": "Language",
+    "FirstName": "First Name",
+    "SurName": "Sur Name",
+    "Region": "Region"
+  }
+}

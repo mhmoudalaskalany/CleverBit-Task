@@ -1,0 +1,22 @@
+{
+  "TITLE": "Employee Management System",
+  "HOME": {},
+  "Data": {
+    "Employees": "الموظفين",
+    "Home": "الرئيسية",
+    "Employee": "موظف",
+    "Name": "الاسم",
+    "Language": "اللغة",
+    "FirstName": "الاسم الاول",
+    "SurName": "الاسم الاخير",
+    "Region": "المنطقة",
+    "Actions": "خيارات"
+  },
+  "Common": {
+    "Name": "الاسم",
+    "Language": "اللغة",
+    "FirstName": "الاسم الاول",
+    "SurName": "الاسم الاخير",
+    "Region": "المنطقة"
+  }
+}

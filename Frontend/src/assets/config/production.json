@@ -1,0 +1,6 @@
+{
+  "HOST_API": "https://localhost:5001/api/v1/",
+  "API": {
+    "GET-EMPLOYEES": "https://localhost:5001/api//v1Gateways/GetPaged"
+  }
+}

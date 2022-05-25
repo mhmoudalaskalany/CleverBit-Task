@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/material.theme.css";
+@import "~ngx-toastr/toastr";
+/* global styles for element */
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #f9fafb !important;
+}
+
+.material-icons {
+    font-family: "Material Icons" !important;
+}
+
+.mat-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.pi {
+    font-family: "primeicons" !important;
+}
+/** RTL Styles */
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ng select element styles */
+/* selected element background */
+
+mat-panel-title {
+    padding: 10px !important;
+}
+
+
+
+.ng-select-container {
+    .ng-value-container {
+        .ng-value {
+            background: #6a008a !important;
+            padding: 5px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .ng-star-inserted {
+            color: #fff;
+        }
+    }
+}
+
+/* Border Color */
+.ng-select.ng-invalid.ng-touched .ng-select-container {
+    border-color: red;
+}
+/* Arrow Color */
+.ng-select.ng-invalid.ng-touched .ng-arrow-wrapper .ng-arrow {
+    border-color: red transparent transparent;
+}
+/* Placeholder Color */
+.ng-select.ng-invalid.ng-touched .ng-select-container .ng-placeholder {
+    color: red;
+}
+
+/* scroll bar style */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #fe7096, #6a008a) !important;
+    border-radius: 8px;
+}
+
+/* ng toaster */
+.toast-container {
+    .ngx-toastr {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        border-bottom: none;
+        margin: 0;
+        box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+
+        &.toast-success {
+            border: 1px solid #059669;
+            background-color: #34d399;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4IiBzdHJva2U9IiNmZmYiPg0KICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTkgMTJsMiAyIDQtNG02IDJhOSA5IDAgMTEtMTggMCA5IDkgMCAwMTE4IDB6IiAvPg0KPC9zdmc+");
+        }
+
+        &.toast-error {
+            border: 1px solid #dc2626;
+            background-color: #f87171;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4IiBzdHJva2U9IiNmZmYiPg0KICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTEwIDE0bDItMm0wIDBsMi0ybS0yIDJsLTItMm0yIDJsMiAybTctMmE5IDkgMCAxMS0xOCAwIDkgOSAwIDAxMTggMHoiIC8+DQo8L3N2Zz4=");
+        }
+
+        .toast-progress {
+            height: 2px;
+        }
+    }
+}

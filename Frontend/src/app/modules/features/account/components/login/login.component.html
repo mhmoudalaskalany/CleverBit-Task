@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="login" [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="login__field">
+                    <i class="login__icon bx bx-user"></i>
+                    <input type="text" name="username" formControlName="username" class="login__input"
+                        placeholder="User name" autocomplete="username">
+                    <mat-error *ngIf="loginForm.get('username')?.errors && loginForm.get('username')?.touched">
+                        <span class="font-12">{{ loginForm.get('username')?.errors | validationHandler
+                            }}</span>
+                    </mat-error>
+
+                </div>
+                <div class="login__field">
+                    <i class="login__icon bx bx-lock"></i>
+                    <input type="password" class="login__input" formControlName="password" name="password"
+                        placeholder="Password" autocomplete="current-password">
+                    <mat-error *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched">
+                        <span class="font-12">{{ loginForm.get('password')?.errors | validationHandler
+                            }}</span>
+                    </mat-error>
+
+                </div>
+                <button class="button login__submit" type="submit" [disabled]="loginForm.invalid">
+                    <span class="button__text">Log In Now</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>
+            </form>
+
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
+</div>

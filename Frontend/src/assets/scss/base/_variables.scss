@@ -1,0 +1,210 @@
+$primary: #6a008a;
+$primary-light: rgba($primary, 0.4);
+$secondary: #868e96;
+$danger: #fe7096;
+$warning: #ffd500;
+$light: rgba(128, 73, 169, 0.15);
+$green: #07cdae;
+$blue-light: #0099cb;
+$page-bg: #f7f9fd;
+$sidebar-hover: #6a008a;
+$purple: #747cf3;
+$white: white;
+$black: black;
+$dark: #1d252d;
+$text-light: #d9d9d9;
+$text-dark: #212a36;
+$middle: #8e9aa0;
+$success: #00c48c;
+$success-light: rgba(
+    $color: $success,
+    $alpha: 0.11,
+);
+$error: #ff375e;
+$error-light: rgba(
+    $color: $error,
+    $alpha: 0.11,
+);
+$inprogress: #d6a100;
+$inprogress-light: rgba(
+    $color: $inprogress,
+    $alpha: 0.11,
+);
+$primaryGreen: #006450;
+$primaryYellow: #d99a28;
+$primaryGrey: #868894;
+$alertError: #fef0f0;
+$darkBlack: #23292f;
+$darkwhite: #d7cfcf;
+$secondaryOceanGreen: #49a487;
+$secondarySeaBlue: #66c0cb;
+$primaryGreenLight: #1da78b;
+$darkGrey: #55565e;
+$bGColor: #f7f9fd;
+$secondaryLightOliveGreen: #a1c755;
+$secondarySepia: #955023;
+$buttonYellowDark: #937644;
+$buttonYellowLight: #f4b747;
+$cardShdow: rgba(114, 159, 197, 0.1);
+$gredYellowDark: #d5931c;
+$gredYellowLight: #ffdfa6;
+$bGLightGreen: #f2f9f6;
+$lightGrey: #dcdde5;
+$lightGreyInfo: #f0f0f0;
+$alertInfo: #f2f5ff;
+$alertWarning: #fdfaf2;
+$alertSuccess: #effcf6;
+$white: #ffffff;
+$buttonShadow: rgba(24, 86, 74, 0.2);
+$line-seperator: rgba(191, 193, 200, 0.14);
+$hoverShadow: rgba(73, 164, 135, 0.2);
+$secondaryOrange: #e3743a;
+$primaryGreen-gredient: rgba(0, 100, 80, 0.87);
+$primaryGreen-light-gredient: rgba(0, 100, 80, 0);
+$red: #dc3545;
+$lightRed: #ed5454;
+$AlertInfo: #789cff;
+$AlertSuccess: #5be3a4;
+$box-shadow: 0 3px 12px rgba(6, 11, 47, 0.06);
+$primary-color: $primaryGreen;
+$primary-dark-color: $secondaryOceanGreen;
+
+$primary-gredient: $primaryGreen-gredient;
+$primary-light-gredient: $primaryGreen-light-gredient;
+
+$primary-light-color: $bGLightGreen;
+$primary-light-2-color: $primaryGreenLight;
+
+$secondary-color: $primaryYellow;
+$secondary-2-color: $buttonYellowDark;
+$secondary-light-color: $buttonYellowLight;
+$secondary-light-2-color: $gredYellowLight;
+
+$grey-color: $primaryGrey;
+$grey-light-color: $lightGrey;
+$grey-dark-color: $darkGrey;
+$grey-dark-2-color: rgb(91, 103, 112);
+$grey-light-2-color: #d8d8d8;
+$grey-light-3-color: #e7e8e8;
+$grey-light-4-color: #bdbdbd;
+
+$white-color: $white;
+$annoncentH: #ed5454;
+$annoncentM: #d99a28;
+$annoncentL: #789cff;
+
+$purple-dark-color: #291439;
+$purple-dark-2-color: #362045;
+
+$orange-color: #c7683e;
+$orange-dark-color: #bf643a;
+
+$green-light-color: $bGLightGreen;
+$green-2-color: #229a7d;
+
+$overlay-color: #d0b37ed4;
+$bck-color: #c7683e;
+
+$upload-color: #fffdfa;
+
+// background
+$background-color: $bGColor;
+$background-light-color: #f0f1f1;
+
+// footer
+$footer-color: #fffdfa;
+
+// text
+$text-color: #23292f;
+$text-medium-color: #bdbdbd;
+$text-light-color: #ccccca;
+$text-subtitle: $darkwhite;
+// states
+$success-color: $primary-color;
+$success-icon: $primary-color;
+$success-background: $alertSuccess;
+
+$error-color: #b06b6b;
+$error-icon: $primaryYellow;
+$error-background: $alertError;
+
+$warning-color: #997c47;
+$warning-icon: $primaryYellow;
+$warning-background: $alertWarning;
+
+// status
+$approved-color: $primary-color;
+$approved-background: $alertSuccess;
+
+$rejected-color: #f16b6b;
+$rejected-background: #f16b6b;
+
+$pending-color: #997c47;
+$pending-background: $alertWarning;
+
+$info-color: #7e89a9;
+$info-icon: #789cff;
+$info-background: #c0ebf6;
+
+// slider item
+$slider-bck-color: #fff9f0;
+// borders
+$border-color: #f4f4f4;
+
+// multi card
+$bord-color: rgba(228, 231, 236, 0.54);
+$category-color: #768897;
+
+// paginator
+$paginator-bg: #f7f3eb;
+$paginator-text: #b1aeb3;
+
+// gradient
+// $gradient-primary-start: #009496;
+// $gradient-primary-end: #01ad7d;
+// $gradient-primary-dark-start: #026f71;
+// $gradient-primary-dark-end: #03986f;
+
+$gradient-primary-start: #d0b37e;
+$gradient-primary-end: #eacc94;
+$gradient-primary-dark-start: #b89c6a;
+$gradient-primary-dark-end: #f7deb1;
+
+$bp-sm-mobile-min: 320px;
+$bp-sm-mobile-max: 760px;
+$bp-lg-mobile-max-tablet-min: 768px;
+$bp-max-tablet: 992px;
+$bp-tablet-max: 1024px;
+$bp-desktop-min: 1200px;
+
+//margin
+$margin-top-neg-90: -90px;
+//padding
+$padding-xlarge: 5.5rem;
+$padding-large: 13rem;
+$padding-medium: 8rem;
+$padding-xmedium: 3rem;
+$padding-small: 3.5rem;
+$padding-xsmall: 0.5rem;
+
+$paddint-5rem: 5rem;
+
+// shadows
+$shadow-black: rgba(0, 0, 0, 0.08);
+$shadow-card: $cardShdow;
+
+//overlay
+$overlay-dark-color: rgba(29, 29, 27, 0.7);
+
+$sidebar-bg: $white;
+$theme-gradient-colors: (
+    primary: linear-gradient(to right, #6a008a, #fe7096),
+    secondary: linear-gradient(to right, #e7ebf0, #868e96),
+    success: linear-gradient(to right, #84d9d2, #07cdae),
+    info: linear-gradient(to right, #90caf9, #047edf 99%),
+    warning: linear-gradient(to right, #f6e384, #e67e22),
+    danger: linear-gradient(to right, #da8cff, #9a55ff),
+    light: linear-gradient(to bottom, #f4f4f4, #e4e4e9),
+    dark: linear-gradient(89deg, #5e7188, #3e4b5b),
+    red: linear-gradient(to right, #e74c3c, #e67e22),
+);
